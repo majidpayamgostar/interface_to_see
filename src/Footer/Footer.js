@@ -12,7 +12,7 @@ export default class Footer extends Component {
 }
 const styles = StyleSheet.create({
     className: {
-        flex: .3,
-        backgroundColor:'yellow'
+        flex: .15,
+        backgroundColor:'yellow',
     }
 });
