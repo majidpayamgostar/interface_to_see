@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {View, Text, StyleSheet, Image,ScrollView} from 'react-native';
 import Header from "./Header/Header";
 import Body from "./Body/Body";
-import Footer from "./Footer/Footer";
 
 export default class Home extends Component {
     render() {
@@ -10,7 +9,6 @@ export default class Home extends Component {
             <View style={styles.HomeStyle}>
                     <Header/>
                     <Body/>
-                    <Footer/>
             </View>
         );
     }

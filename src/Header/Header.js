@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, Image, blurRadius} from 'react-native';
+import {View, Text, StyleSheet, Image} from 'react-native';
 
 export default class Header extends Component {
     render() {
@@ -16,7 +16,8 @@ export default class Header extends Component {
                         <Text style={{color: 'white', fontSize: 30, fontWeight: 'bold'}}>Snow Mountain</Text>
                     </View>
                     <View>
-                        <Text style={{color:'white'}}>Stands at the foot of the mountain , enjoy the most beautiful scenery in the
+                        <Text style={{color: 'white'}}>Stands at the foot of the mountain , enjoy the most beautiful
+                            scenery in the
                             world...</Text>
                     </View>
                     <View style={styles.starStyle}>
@@ -43,7 +44,11 @@ export default class Header extends Component {
                             />
                         </View>
                         <View style={styles.locationButton}>
-                            <Text>kkk</Text>
+                            <Image
+                                source={require('../image/flags.png')}
+                                style={[styles.imageStarStyle, {width: 16, height: 16}]}
+                            />
+                            <Text style={{color:'white',fontSize:12}}>London</Text>
                         </View>
                     </View>
                 </View>
@@ -54,32 +59,33 @@ export default class Header extends Component {
 const styles = StyleSheet.create({
     className: {
         flex: .7,
-        backgroundColor: 'green',
     },
     imageStyle: {
         width: 420,
-        height: 360,
+        height: 373,
     },
     snow: {
         flex: .7,
-        borderColor: 'red',
-        borderWidth: 5,
+        backgroundColor: 'rgba(156, 169, 186, .6)',
         marginLeft: 50,
         justifyContent: 'space-evenly',
-        paddingLeft: 20
+        paddingLeft: 20,
     },
     starStyle: {
-        backgroundColor: 'red',
         flexDirection: 'row',
         justifyContent: 'space-between',
         
     },
     imageStarStyle: {
-        marginLeft: 4
+        marginLeft: 4,
     },
-    locationButton:{
+    locationButton: {
         marginRight: 30,
-        
-    }
+        flexDirection:'row',
+        backgroundColor:'#69698c',
+        padding: 5,
+        borderRadius:3,
+        alignItems:'center',
+    },
     
 });
