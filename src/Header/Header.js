@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
         marginLeft: 50,
         justifyContent: 'space-evenly',
         paddingLeft: 20,
+        borderRadius: 3
     },
     starStyle: {
         flexDirection: 'row',
