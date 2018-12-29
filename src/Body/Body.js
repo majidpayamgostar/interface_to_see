@@ -22,7 +22,6 @@ export default class Body extends Component {
                         <View>
                             <Text>...</Text>
                         </View>
-
                     </View>
                     <View></View>
                     <View></View>
@@ -34,26 +33,26 @@ export default class Body extends Component {
 const styles = StyleSheet.create({
     className: {
         flex: .3,
-        backgroundColor:'blue',
-
+        backgroundColor: 'blue',
+        
     },
-    bodyWhite:{
+    bodyWhite: {
         backgroundColor: 'white',
         flex: 1,
         marginLeft: 50,
         marginTop: 20,
         borderRadius: 3,
     },
-    header:{
+    header: {
         flexDirection: 'row',
         justifyContent: 'space-around',
-        backgroundColor:'green',
+        backgroundColor: 'green',
         alignItems: 'center'
     },
-    profileImage:{
+    profileImage: {
         width: 25,
         height: 25,
         borderRadius: 5
     }
-
+    
 });
